@@ -1,0 +1,26 @@
+/* Minimal custom styles for demo UI */
+body {
+  padding: 1rem;
+}
+.table-responsive {
+  background: #fff;
+}
+.img-thumbnail {
+  object-fit: cover;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.alert-info .bi {
+  color: #0d6efd;
+}
+.btn-primary.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+/* small responsive tweaks */
+@media (max-width: 576px) {
+  .table-responsive table {
+    font-size: 0.9rem;
+  }
+}
