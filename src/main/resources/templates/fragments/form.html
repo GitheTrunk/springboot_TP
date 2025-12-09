@@ -1,4 +1,6 @@
 <form th:fragment="formFragment" th:action="@{/save-product}" method="post" th:object="${productForm}" enctype="multipart/form-data" class="container">
+    <input type="hidden" th:field="*{id}" />
+
     <div class="mb-3">
         <h4 th:text="${pageTitle ?: 'Create Product'}"></h4>
     </div>

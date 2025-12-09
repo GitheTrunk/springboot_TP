@@ -8,28 +8,28 @@
 
  :: Spring Boot ::                (v3.5.7)
 
-2025-12-08T16:05:20.836+07:00  INFO 91030 --- [database] [           main] example.demo.DemoApplication             : Starting DemoApplication v0.0.1-SNAPSHOT using Java 25 with PID 91030 (/Users/macbookpro/Documents/I4_ITC/Software_Eng/Springboots/demo/build/libs/demo-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/Documents/I4_ITC/Software_Eng/Springboots/demo)
-2025-12-08T16:05:20.837+07:00  INFO 91030 --- [database] [           main] example.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
-2025-12-08T16:05:21.099+07:00  INFO 91030 --- [database] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-08T16:05:21.121+07:00  INFO 91030 --- [database] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
-2025-12-08T16:05:21.354+07:00  INFO 91030 --- [database] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-12-08T16:05:21.360+07:00  INFO 91030 --- [database] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-08T16:05:21.360+07:00  INFO 91030 --- [database] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-12-08T16:05:21.371+07:00  INFO 91030 --- [database] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-12-08T16:05:21.371+07:00  INFO 91030 --- [database] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 517 ms
-2025-12-08T16:05:21.679+07:00  INFO 91030 --- [database] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ecommerce2026 (MySQL 9.5)
-2025-12-08T16:05:21.702+07:00  WARN 91030 --- [database] [           main] o.f.c.internal.database.base.Database    : Using MySQL 9.5 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 9.4.
-2025-12-08T16:05:21.720+07:00  INFO 91030 --- [database] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.012s)
-2025-12-08T16:05:21.738+07:00  INFO 91030 --- [database] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `ecommerce2026`: 4
-2025-12-08T16:05:21.740+07:00  INFO 91030 --- [database] [           main] o.f.core.internal.command.DbMigrate      : Schema `ecommerce2026` is up to date. No migration necessary.
-2025-12-08T16:05:21.763+07:00  INFO 91030 --- [database] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-08T16:05:21.780+07:00  INFO 91030 --- [database] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34fcd292
-2025-12-08T16:05:21.780+07:00  INFO 91030 --- [database] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-08T16:05:21.795+07:00  INFO 91030 --- [database] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-08T16:05:21.814+07:00  INFO 91030 --- [database] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
-2025-12-08T16:05:21.827+07:00  INFO 91030 --- [database] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-12-08T16:05:21.939+07:00  INFO 91030 --- [database] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-08T16:05:21.977+07:00  INFO 91030 --- [database] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-09T16:39:24.390+07:00  INFO 8260 --- [database] [           main] example.demo.DemoApplication             : Starting DemoApplication v0.0.1-SNAPSHOT using Java 25 with PID 8260 (/Users/macbookpro/Documents/I4_ITC/Software_Eng/Springboots/demo/build/libs/demo-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/Documents/I4_ITC/Software_Eng/Springboots/demo)
+2025-12-09T16:39:24.392+07:00  INFO 8260 --- [database] [           main] example.demo.DemoApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T16:39:24.680+07:00  INFO 8260 --- [database] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-09T16:39:24.699+07:00  INFO 8260 --- [database] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-12-09T16:39:24.943+07:00  INFO 8260 --- [database] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-09T16:39:24.951+07:00  INFO 8260 --- [database] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T16:39:24.951+07:00  INFO 8260 --- [database] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-09T16:39:24.963+07:00  INFO 8260 --- [database] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-09T16:39:24.964+07:00  INFO 8260 --- [database] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 551 ms
+2025-12-09T16:39:25.267+07:00  INFO 8260 --- [database] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ecommerce2026 (MySQL 9.5)
+2025-12-09T16:39:25.284+07:00  WARN 8260 --- [database] [           main] o.f.c.internal.database.base.Database    : Using MySQL 9.5 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 9.4.
+2025-12-09T16:39:25.300+07:00  INFO 8260 --- [database] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.010s)
+2025-12-09T16:39:25.321+07:00  INFO 8260 --- [database] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `ecommerce2026`: 4
+2025-12-09T16:39:25.323+07:00  INFO 8260 --- [database] [           main] o.f.core.internal.command.DbMigrate      : Schema `ecommerce2026` is up to date. No migration necessary.
+2025-12-09T16:39:25.347+07:00  INFO 8260 --- [database] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-09T16:39:25.367+07:00  INFO 8260 --- [database] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63db743d
+2025-12-09T16:39:25.368+07:00  INFO 8260 --- [database] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-09T16:39:25.383+07:00  INFO 8260 --- [database] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-09T16:39:25.409+07:00  INFO 8260 --- [database] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-09T16:39:25.422+07:00  INFO 8260 --- [database] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-09T16:39:25.536+07:00  INFO 8260 --- [database] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-09T16:39:25.585+07:00  INFO 8260 --- [database] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.5
@@ -37,59 +37,15 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-08T16:05:22.304+07:00  INFO 91030 --- [database] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08T16:05:22.305+07:00  INFO 91030 --- [database] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-08T16:05:22.449+07:00  WARN 91030 --- [database] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-08T16:05:22.463+07:00  INFO 91030 --- [database] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-12-08T16:05:22.494+07:00  INFO 91030 --- [database] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-12-08T16:05:22.651+07:00  INFO 91030 --- [database] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-12-08T16:05:22.659+07:00  INFO 91030 --- [database] [           main] example.demo.DemoApplication             : Started DemoApplication in 1.996 seconds (process running for 2.195)
-2025-12-08T16:06:10.719+07:00  INFO 91030 --- [database] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-08T16:06:10.719+07:00  INFO 91030 --- [database] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-08T16:06:10.720+07:00  INFO 91030 --- [database] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-08T16:23:17.702+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s802ms).
-2025-12-08T16:24:37.498+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s797ms).
-2025-12-08T16:25:32.411+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s912ms).
-2025-12-08T16:28:48.708+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m16s298ms).
-2025-12-08T16:46:30.273+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m11s554ms).
-2025-12-08T16:48:34.874+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m4s601ms).
-2025-12-08T16:50:24.480+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s605ms).
-2025-12-08T16:51:49.390+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s907ms).
-2025-12-08T16:53:14.262+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s866ms).
-2025-12-08T16:54:09.260+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s998ms).
-2025-12-08T16:55:58.970+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s709ms).
-2025-12-08T17:13:16.513+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m47s536ms).
-2025-12-08T17:29:49.642+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s189ms).
-2025-12-08T17:30:44.538+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s896ms).
-2025-12-08T17:35:43.978+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m27s436ms).
-2025-12-08T17:37:04.623+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s644ms).
-2025-12-08T18:08:47.192+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m12s559ms).
-2025-12-08T18:58:08.854+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m21s662ms).
-2025-12-08T19:41:48.664+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m39s810ms).
-2025-12-08T19:58:36.654+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m47s990ms).
-2025-12-08T20:10:45.906+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m9s252ms).
-2025-12-08T20:36:36.877+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m50s971ms).
-2025-12-08T20:37:56.666+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s789ms).
-2025-12-08T20:38:51.547+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s881ms).
-2025-12-08T20:40:13.280+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s733ms).
-2025-12-08T20:58:27.695+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m14s414ms).
-2025-12-08T21:00:21.256+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s562ms).
-2025-12-08T21:02:12.732+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s476ms).
-2025-12-08T21:12:16.761+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m4s29ms).
-2025-12-08T21:20:30.234+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m13s473ms).
-2025-12-08T21:22:21.845+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s610ms).
-2025-12-08T21:23:22.831+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m987ms).
-2025-12-08T21:26:39.042+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m16s211ms).
-2025-12-08T22:28:29.523+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m50s481ms).
-2025-12-08T23:14:01.139+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m31s616ms).
-2025-12-08T23:29:22.676+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m21s537ms).
-2025-12-08T23:46:38.716+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m16s39ms).
-2025-12-09T00:30:15.813+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m37s98ms).
-2025-12-09T02:10:20.847+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h40m5s34ms).
-2025-12-09T03:48:14.934+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h37m54s87ms).
-2025-12-09T05:02:02.336+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h13m47s402ms).
-2025-12-09T06:13:34.696+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11m32s360ms).
-2025-12-09T07:10:31.750+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m57s54ms).
-2025-12-09T07:58:09.738+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m37s988ms).
-2025-12-09T09:02:25.677+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m15s939ms).
-2025-12-09T09:24:11.791+07:00  WARN 91030 --- [database] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m16s5ms).
+2025-12-09T16:39:25.917+07:00  INFO 8260 --- [database] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09T16:39:25.918+07:00  INFO 8260 --- [database] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-09T16:39:26.115+07:00  WARN 8260 --- [database] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-09T16:39:26.138+07:00  INFO 8260 --- [database] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-09T16:39:26.179+07:00  INFO 8260 --- [database] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-12-09T16:39:26.382+07:00  INFO 8260 --- [database] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T16:39:26.389+07:00  INFO 8260 --- [database] [           main] example.demo.DemoApplication             : Started DemoApplication in 2.19 seconds (process running for 2.399)
+2025-12-09T16:40:08.836+07:00  INFO 8260 --- [database] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T16:40:08.840+07:00  INFO 8260 --- [database] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-09T16:40:08.843+07:00  INFO 8260 --- [database] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-09T16:40:08.845+07:00  INFO 8260 --- [database] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-09T16:40:08.847+07:00  INFO 8260 --- [database] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -8,6 +8,7 @@ import jakarta.validation.constraints.Size;
 import org.springframework.web.multipart.MultipartFile;
 
 public class ProductDTO {
+    private Long id;
 
     @NotBlank(message = "Product name must not be empty")
     @Size(min = 3, max = 50, message = "Product name must be between 3 and 50 characters")
@@ -22,6 +23,13 @@ public class ProductDTO {
     @NotNull(message = "Please upload an image for the product")
     private MultipartFile image;
 
+    public Long getId() {
+        return id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
+    }
     public ProductDTO() {
     }
 

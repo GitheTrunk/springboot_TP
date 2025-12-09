@@ -49,18 +49,33 @@ public class ProductController {
     }
 
     @PostMapping("/save-product")
-        public String saveProduct(@Valid @ModelAttribute("productForm") ProductDTO productForm,
+    public String saveProduct(@Valid @ModelAttribute("productForm") ProductDTO productForm,
             BindingResult bindingResult,
             Model model,
             org.springframework.web.servlet.mvc.support.RedirectAttributes redirectAttributes) {
+        
+        // For new products, require image
+        if (productForm.getId() == null) {
+            MultipartFile img = productForm.getImage();
+            if (img == null || img.isEmpty()) {
+                bindingResult.rejectValue("image", "image.required", "Please upload an image for the product");
+            }
+        }
+        
         if (bindingResult.hasErrors()) {
             model.addAttribute("content", "fragments/form");
             model.addAttribute("contentName", "formFragment");
-            model.addAttribute("pageTitle", "Create Product");
+            model.addAttribute("pageTitle", productForm.getId() == null ? "Create Product" : "Edit Product");
             return "index";
         }
 
-        Product product = new Product();
+        Product product;
+        if (productForm.getId() != null) {
+            product = productRepository.findById(productForm.getId())
+                    .orElseThrow(() -> new IllegalArgumentException("Invalid product Id:" + productForm.getId()));
+        } else {
+            product = new Product();
+        }
         product.setName(productForm.getName());
         product.setDescription(productForm.getDescription());
         product.setPrice(productForm.getPrice());
@@ -75,13 +90,15 @@ public class ProductController {
                 Files.copy(file.getInputStream(), target, StandardCopyOption.REPLACE_EXISTING);
                 product.setImagePath("/uploads/" + filename);
             } catch (IOException e) {
-                // log error and continue without image
                 e.printStackTrace();
             }
         }
 
         Product saved = productRepository.save(product);
-        redirectAttributes.addFlashAttribute("successMessage", "Product created (id=" + saved.getId() + ")");
+        String message = productForm.getId() == null 
+            ? "Product created (id=" + saved.getId() + ")"
+            : "Product updated (id=" + saved.getId() + ")";
+        redirectAttributes.addFlashAttribute("successMessage", message);
         return "redirect:/";
     }
 
@@ -108,15 +125,16 @@ public class ProductController {
     public String editProduct(@PathVariable("id") Long id, Model model) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid product Id:" + id));
-        model.addAttribute("productForm", product);
-        model.addAttribute("pageTitle", "Edit Product");
-        model.addAttribute("content", "fragments/form");
-        model.addAttribute("contentName", "formFragment");
         ProductDTO productDTO = new ProductDTO();
+        productDTO.setId(product.getId());
         productDTO.setName(product.getName());
         productDTO.setDescription(product.getDescription());
         productDTO.setPrice(product.getPrice());
+
         model.addAttribute("productForm", productDTO);
+        model.addAttribute("pageTitle", "Edit Product");
+        model.addAttribute("content", "fragments/form");
+        model.addAttribute("contentName", "formFragment");
         return "index";
     }
 

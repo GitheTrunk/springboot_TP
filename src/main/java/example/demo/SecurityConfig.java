@@ -39,8 +39,8 @@ public class SecurityConfig {
             .httpBasic(basic -> basic.disable())
             .csrf(crsf -> crsf.disable())
             .authorizeHttpRequests(auth -> auth
-            .requestMatchers("/api/**").permitAll()
-            .requestMatchers("/css/**", "/images/**", "/uploads/**").permitAll()
+            .requestMatchers("/api/login", "/api/register", "/login", "/register").permitAll()
+            .requestMatchers("/products").permitAll()
             .anyRequest().permitAll() 
         )
         .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
