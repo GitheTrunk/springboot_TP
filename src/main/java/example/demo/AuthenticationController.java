@@ -4,22 +4,38 @@ import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import example.demo.Jwt.JwtUtil;
 
 @RestController
 public class AuthenticationController {
 
     private final PasswordEncoder encoder;
     private final UserRepository userRepository;
+    private final JwtUtil jwtUtil;
 
-    public AuthenticationController(PasswordEncoder encoder, UserRepository userRepository) {
+    public AuthenticationController(PasswordEncoder encoder, UserRepository userRepository, JwtUtil jwtUtil) {
         this.encoder = encoder;
         this.userRepository = userRepository;
+        this.jwtUtil = jwtUtil;
     }
 
+    // GET endpoints for browser access
+    @GetMapping("/api/register")
+    public ResponseEntity<?> registerInfo() {
+        return ResponseEntity.ok(userRepository.findAll());
+    }
+
+    @GetMapping("/api/login")
+    public ResponseEntity<?> loginInfo() {
+        return ResponseEntity.ok(userRepository.findAll());
+    }
+    
     // JSON endpoint
     @PostMapping(value = "/api/register", consumes = "application/json")
     public ResponseEntity<?> registerJson(@RequestBody LoginRequest request) {
@@ -50,7 +66,8 @@ public class AuthenticationController {
         newUser.setRole("USER");
         userRepository.save(newUser);
 
-        return ResponseEntity.status(201).body(new LoginResponse(newUser.getUsername(), "User registered successfully"));
+        String token = jwtUtil.generateToken(newUser.getUsername());
+        return ResponseEntity.status(201).body(new AuthResponse(newUser.getUsername(), token));
     }
 
     // JSON endpoint
@@ -83,6 +100,7 @@ public class AuthenticationController {
             return ResponseEntity.status(401).body("Invalid username or password");
         }
 
-        return ResponseEntity.ok(new LoginResponse(userEntity.getUsername(), "Login success"));
+        String token = jwtUtil.generateToken(userEntity.getUsername());
+        return ResponseEntity.ok(new AuthResponse(userEntity.getUsername(), token));
     }
 }
